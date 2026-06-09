@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Avocat Ardelean Andrei Ioan – Baia Mare, Maramureș</title>
+    <meta name="description" content="Contactați Avocat Ardelean Andrei Ioan din Baia Mare. Programați o consultație juridică completând formularul de contact sau sunând la 0751 775 175.">
+    <meta name="keywords" content="contact avocat baia mare, programare consultatie juridica, avocat maramures contact">
+    <link rel="canonical" href="https://www.site-ul-tau.ro/contact.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Av. Ardelean Andrei Ioan</a>
+            <button class="hamburger" id="hamburger" aria-label="Deschide meniu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Acasă</a>
+                <a href="articole.html">Articole</a>
+                <a href="intrebari.html">Întrebări</a>
+                <a href="contact.html" class="active nav-cta">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Contact</h1>
+        <p>Programăm o consultație în care discutam situația dumneavoastră fără nicio obligație.</p>
+    </div>
+
+    <div class="contact-page">
+        <div class="contact-grid">
+
+            <!-- Coloana stanga: info + harta -->
+            <div class="contact-info">
+                <h1>Date de contact</h1>
+                <p>Mă găsiți la biroul din Baia Mare sau mă puteți contacta telefonic / prin email.</p>
+
+                <div class="contact-detail">
+                    <span class="contact-detail-icon">📍</span>
+                    <div>
+                        <h4>Adresă</h4>
+                        <p>Bulevardul Unirii nr. 16, Baia Mare 430232, Maramureș</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span class="contact-detail-icon">📞</span>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+40751775175">0751 775 175</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span class="contact-detail-icon">✉️</span>
+                    <div>
+                        <h4>Email</h4>
+                        <!--
+                            TODO: Înlocuiți adresa de mai jos cu emailul dumneavoastră real.
+                            Exemplu: avocat.ardelean@gmail.com sau office@cabinet-ardelean.ro
+                        -->
+                        <p><a href="mailto:email@exemplu.ro">[emailul dumneavoastră]</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span class="contact-detail-icon">🕒</span>
+                    <div>
+                        <h4>Program</h4>
+                        <p>Luni – Vineri: 09:00 – 17:00</p>
+                        <p>Sâmbătă &amp; Duminică: ínchis</p>
+                    </div>
+                </div>
+
+                <!-- GOOGLE MAPS EMBED -->
+                <div class="map-container">
+                    <!--
+                        Google Maps embed – harta este deja setată la adresa cabinetului.
+                        Dacă doriți să actualizați harta:
+                        1. Mergeți pe maps.google.com și căutați adresa dumneavoastră
+                        2. Apăsați Share > Embed a map
+                        3. Copiați codul iframe și înlocuiți iframe-ul de mai jos
+                    -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.8343323623876!2d23.570886400000003!3d47.648786099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737dd00304d283d%3A0xe38a8ea80cbb7234!2sAvocat%20Baia%20Mare%20-%20Ardelean%20Andrei!5e0!3m2!1sro!2sro!4v1763992588391!5m2!1sro!2sro"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Locația cabinetului de avocat Ardelean Andrei Ioan, Baia Mare">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Coloana dreapta: formular contact -->
+            <div class="contact-form-wrap">
+                <h2>📝 Trimiteți o solicitare</h2>
+
+                <!--
+                    ====================================================
+                    INSTRUCȚIUNI FORMULAR – FORMSPREE (RECOMANDAT)
+                    ====================================================
+                    Formularul folosește Formspree (formspree.io) – un serviciu
+                    GRATUIT care trimite email-urile din formular direct la voi.
+
+                    PAŞI PENTRU ACTIVARE:
+                    1. Mergeți pe https://formspree.io și creați un cont gratuit
+                    2. Creați un nou "Form" și introduceți emailul dumneavoastră
+                    3. Veți primi un COD de forma: xyzabcde
+                    4. Înlocuiți CODUL_TAU_FORMSPREE de mai jos cu acel cod
+                       Exemplu: action="https://formspree.io/f/xyzabcde"
+                    5. Gata! La fiecare submit, veți primi un email.
+
+                    ALTERNATIVA: Dacă aveți hosting cu PHP, puteți folosi
+                    un script PHP simplu în loc de Formspree.
+                    ====================================================
+                -->
+                <form action="https://formspree.io/f/CODUL_TAU_FORMSPREE" method="POST">
+
+                    <!-- Câmp ascuns – redirectă utilizatorul după trimitere -->
+                    <!-- <input type="hidden" name="_next" value="https://www.site-ul-tau.ro/multumesc.html"> -->
+
+                    <div class="form-group">
+                        <label for="nume">Numele dumneavoastră *</label>
+                        <input type="text" id="nume" name="nume" required
+                               placeholder="Ex: Popescu Ioan" autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresa de email *</label>
+                        <input type="email" id="email" name="email" required
+                               placeholder="Ex: popescu@email.com" autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefon">Număr de telefon</label>
+                        <input type="tel" id="telefon" name="telefon"
+                               placeholder="Ex: 07xx xxx xxx" autocomplete="tel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subiect">Tipul problemei juridice</label>
+                        <select id="subiect" name="subiect">
+                            <option value="">-- Selectați domeniul --</option>
+                            <option value="Drept Civil">Drept Civil (contracte, litigi, partaj)</option>
+                            <option value="Dreptul Familiei">Dreptul Familiei (divorț, custod ie)</option>
+                            <option value="Drept Penal">Drept Penal</option>
+                            <option value="Drept Comercial">Drept Comercial</option>
+                            <option value="Drept Imobiliar">Drept Imobiliar</option>
+                            <option value="Altele">Altele</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mesaj">Descriere scurtă a situației *</label>
+                        <textarea id="mesaj" name="mesaj" rows="5" required
+                                  placeholder="Descrieți pe scurt situația dumneavoastră juridică. Nu includeți date confidențiale sensibile în acest formular."></textarea>
+                    </div>
+
+                    <p class="form-notice">
+                        🔒 Datele dumneavoastră sunt confidențiale. Nu vor fi transmise către terți.
+                        Veți fi contactat(ă) în maxim 24 de ore lucrătoare.
+                    </p>
+
+                    <button type="submit" class="form-submit-btn">Trimite Solicitarea</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Cabinet Avocat Ardelean Andrei Ioan</h3>
+                <p>Servicii juridice profesioniste în Baia Mare și Maramureș.</p>
+                <p>Integritate, transparență și dedicare pentru fiecare client.</p>
+                <p style="margin-top: 12px;">Membru al Baroului Maramureș</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pagini</h4>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="articole.html">Articole Juridice</a></li>
+                    <li><a href="intrebari.html">Întrebări Frecvente</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📍 Bulevardul Unirii nr. 16, Baia Mare</p>
+                <p>📞 <a href="tel:+40751775175">0751 775 175</a></p>
+                <p>✉️ <a href="mailto:email@exemplu.ro">[emailul dumneavoastră]</a></p>
+                <p style="margin-top: 10px; font-size: 0.85rem; color: #64748b;">Luni – Vineri: 09:00 – 17:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Avocat Ardelean Andrei Ioan. Toate drepturile rezervate. | Baia Mare, Maramureș</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', function () {
+            const isOpen = navLinks.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+        navLinks.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
